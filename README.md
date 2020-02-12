@@ -8,6 +8,8 @@
 ### Команда
 Подаш Антон Миколайович apodash01@gmail.com\
 Дмитренко Олександр Олегович dmytrenkos24@gmail.com\
-Снігач Андрій Андрійович snigach01@gmail.com
+Снігач Андрій Андрійович snigach01@gmail.com\
+Мазур Софія Вячеславівна lunarday@ukr.net\
+Расюк Альона Володимирівна linacatz@gmail.com
  
  
