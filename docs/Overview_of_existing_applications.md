@@ -1,6 +1,6 @@
 # Огляд існуючих програм
 <p align="center">
-    <img src="./Assets/Progs.png"/>
+    <img src="./Assets/Progs.png">
 </p>
 
 ## Trello
@@ -28,7 +28,7 @@ Basecamp — це платна клієнт-серверна система уп
 ### Особливості
 
 <p align="center">
-    <img src="./Assets/Features_Of_Basecamp.png"/>
+    <img src="./Assets/Features_Of_Basecamp.png">
 </p>
 
 ## ASANA 
@@ -37,7 +37,7 @@ Asana — програмне забезпечення для веб і мобі�
 ### Особливості
 
 <p align="center">
-    <img src="./Assets/ASANA.png"/>
+    <img src="./Assets/ASANA.png">
 </p>
 
 ## Microsoft Project
