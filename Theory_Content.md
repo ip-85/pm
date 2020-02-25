@@ -1,4 +1,4 @@
-### Зміст теоретичної частини
+## Зміст теоретичної частини
 
 [1. Що таке проект?](docs/What_is_it_project.md)\
 [2. Способи опису бізнес-процесів](docs/Ways_to_describe_business_processes.md)\
