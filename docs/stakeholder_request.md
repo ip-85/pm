@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../Pm_banner.png"/>
+  <img src="../Assets/Pm_banner.png"/>
 </p>
 
 # Project Manager
