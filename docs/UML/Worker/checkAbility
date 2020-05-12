@@ -1,0 +1,96 @@
+@startuml
+skinparam monochrome reverse
+skinparam ArchimateBackgroundColor #ffffff
+skinparam	shadowing false
+skinparam Note {
+	BackgroundColor black
+	FontColor #ffffff
+}
+
+left header
+<font color=000 size=18><b>Package:</b> Worker
+
+<font color=000 size=16><b>ID:</b> taskState
+<font color=000 size=16><b>Назва:</b> Перевірка завдання у колег.
+<font color=000 size=16><b>Учасники:</b> Робітник1, Робітник2, Система.
+<font color=000 size=16><b>Передумови:</b> Робітник бажає перевірити виконання завдання у свого колеги.
+<font color=000 size=16><b>Результат:</b> Перевірка виконана.
+<font color=000 size=16><b>Виключні ситуації:</b>
+<font color=000 size=16> EX_00: Данні відсутні
+<font color=000 size=16> EX_01: В доступі відхилено
+<font color=000 size=16> EX_02: Редагування відсутнє
+<font color=000 size=16> EX_03: Зміну відхилено
+
+<font color=000 size=16><b>Основний сценарій:</b>
+
+end header
+
+|Робітник1|
+start
+: Натискає кнопку "Перевірити завдання";
+
+: Обирає робітника;
+
+|Система|
+|Робітник2|
+|Система|
+: Оброблює запит;
+note right
+
+	EX_00
+
+end note
+
+: Перевіряє доступ;
+note right
+
+	EX_01
+
+end note
+|Робітник1|
+
+: Отримає відповідну сторінку с завданням;
+
+: Редагує;
+
+: Відправляє відредагований файл системі;
+
+|Система|
+
+: Оброблює запит;
+note left
+
+	EX_02
+
+end note
+
+: Надсилає відредагований файл Робітнику2;
+
+|Робітник2|
+
+: Отримає відповідну відредаговану сторінку с завданням;
+
+: Перевіряє отриманий матеріал;
+note right
+
+	EX_03
+
+end note
+
+: Підтверждує зміну;
+
+|Система|
+
+: Оброблює запит;
+
+: Змінює сторінку з виконанням завдання;
+stop;
+
+right footer
+
+
+Project Manager
+НТУУ КПІ ім.І.Сікорського
+Киів-2020
+end footer
+@enduml

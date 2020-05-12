@@ -1,0 +1,69 @@
+@startuml login
+skinparam monochrome reverse
+skinparam ArchimateBackgroundColor #ffffff
+skinparam	shadowing false
+skinparam Note {
+	BackgroundColor #f85658
+	FontColor #ffffff
+}
+
+left header
+<font color=000 size=18><b>Package:</b> Guest
+
+<font color=000 size=16><b>ID:</b> login
+<font color=000 size=16><b>Назва:</b> Авторизація.
+<font color=000 size=16><b>Учасники:</b> Гість, Система.
+<font color=000 size=16><b>Передумови:</b> Гість має обліковий запис.
+<font color=000 size=16><b>Результат:</b> Гість отримує доступ до свого облікового запису.
+<font color=000 size=16><b>Виключні ситуації:</b>
+<font color=000 size=16> EX_00: Не всі поля були заповнені
+<font color=000 size=16> EX_01: Користувача з таким ідентифікатором у базі немає
+<font color=000 size=16> EX_02: Пароль введено невірно
+<font color=000 size=16> EX_03: Доступ до бази даних відсутній
+
+<font color=000 size=16><b>Основний сценарій:</b>
+
+end header
+
+|Гість|
+start
+: Натискає кнопку "Увійти";
+
+: Заповнює поля форми входу;
+note left
+
+	Можлива EX_00
+
+end note
+
+|Система|
+
+: Перевіряє дані на унікальність.;
+
+: Перевіряє чи є такий користувач у базі і чи підходить пароль;
+
+note right
+
+	Можлива EX_01
+	Можлива EX_02
+	Можлива EX_03
+
+end note
+
+: Генерує з відповіді БД токен для Логування користувача;
+
+|Гість|
+
+: Отримує Токен та входить у систему;
+
+stop;
+
+right footer
+
+
+Robin ODMS
+НТУУ КПІ ім.І.Сікорського
+Киів-2020
+end footer
+
+@enduml

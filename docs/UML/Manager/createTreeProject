@@ -1,0 +1,51 @@
+@startuml
+skinparam monochrome reverse
+skinparam ArchimateBackgroundColor #ffffff
+skinparam	shadowing false
+skinparam Note {
+	BackgroundColor black
+	FontColor #ffffff
+}
+
+left header
+<font color=000 size=18><b>Package:</b> Customer
+
+<font color=000 size=16><b>ID:</b> createTreeProject
+<font color=000 size=16><b>Назва:</b> Створення структурного дерева проекту.
+<font color=000 size=16><b>Учасники:</b> Менеджер, Система.
+<font color=000 size=16><b>Передумови:</b> Менеджер бажає створити дерево проекту.
+<font color=000 size=16><b>Результат:</b> Дерево проекту створено.
+<font color=000 size=16><b>Виключні ситуації:</b>
+<font color=000 size=16> EX_00: Не всі поля були заповнені
+
+<font color=000 size=16><b>Основний сценарій:</b>
+
+end header
+
+|Менеджер|
+start
+: Натискає кнопку "Створити дерево проекту";
+
+: Розробляє схему проекта заповнюючі відповідні форми;
+note left
+
+	EX_00
+
+end note
+
+|Система|
+
+: Вносить відповідні записи до бази данних;
+
+: З відповіді БД створює сторінку дерева проекту;
+
+stop;
+
+right footer
+
+
+Project Manager
+НТУУ КПІ ім.І.Сікорського
+Киів-2020
+end footer
+@enduml

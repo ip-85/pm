@@ -1,0 +1,69 @@
+@startuml UserSignup
+skinparam monochrome reverse
+skinparam	shadowing false
+skinparam Note {
+	BackgroundColor #f85658
+	FontColor #ffffff
+}
+
+left header
+<font color=000 size=18><b>Package:</b> Guest
+
+<font color=000 size=16><b>ID:</b> signup
+<font color=000 size=16><b>Назва:</b> Реєстрація.
+<font color=000 size=16><b>Учасники:</b> Гість, Система.
+<font color=000 size=16><b>Передумови:</b> Гість не зараєстрований у системі.
+<font color=000 size=16><b>Результат:</b> Обліковий запис користувача або розробника створено.
+<font color=000 size=16><b>Виключні ситуації:</b>
+<font color=000 size=16> EX_00: Не усі поля були заповнені вірно
+<font color=000 size=16> EX_01: Користувач с такими даними вже існує
+<font color=000 size=16> EX_02: Доступ до бази даних відсутній
+
+<font color=000 size=16><b>Основний сценарій:</b>
+
+end header
+
+|Гість|
+start
+:     Обирає тип користувача,
+під яким хоче зареєструватись;
+
+: Заповнює форму своїми персональними даними;
+note left
+
+	Можлива EX_00
+
+end note
+
+|Система|
+
+: Перевіряє дані на унікальність;
+
+note right
+
+	Можлива EX_01
+
+end note
+
+: Вносить відповідні записи до бази даних ;
+note right
+
+Можливо EX_02.
+
+end note
+
+: Генерує з відповіді БД токен для Логування користувача;
+
+|Гість|
+: Отримує Токен та входить у систему;
+
+stop;
+
+right footer
+
+Robin ODMS
+НТУУ КПІ ім.І.Сікорського
+Киів-2020
+end footer
+
+@enduml
