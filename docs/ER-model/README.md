@@ -1,1 +1,1 @@
-![ER model DDL](https://github.com/ip-85/pm/blob/master/docs/ER-model/src/er%20model.jpg)
+![ER model DDL](https://github.com/ip-85/pm/blob/master/docs/ER-model/src/er_model.png)
