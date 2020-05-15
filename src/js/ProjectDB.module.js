@@ -9,14 +9,4 @@ const pool = mysql.createPool({
     database: 'mydb'
   }).promise();
 
-  
-  
-  
-  pool.end(function(err) {
-    if (err) {
-      return console.log(err.message);
-    }
-    console.log('Pool close');
-  });
-
   module.exports = pool;
