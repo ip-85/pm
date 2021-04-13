@@ -21,7 +21,7 @@
   "homepage": "https://github.com/ip-85/pm#readme",
   "dependencies": {
     "bluebird": "^3.7.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "mysql2": "^2.1.0"
   }
 }
