@@ -18,4 +18,5 @@ newUser.insert();
 })();
 
 const newProject = new project('Landding page', 'Create a new design of main page with video', '20.05.2020', '30.05.2020')
+
 newProject.update();
